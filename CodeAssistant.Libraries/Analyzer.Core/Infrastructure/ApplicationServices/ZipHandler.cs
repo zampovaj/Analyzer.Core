@@ -36,9 +36,9 @@ namespace Analyzer.Core.Infrastructure.ApplicationServices
         /// </summary>
         /// <param name="zipFile">The .zip file to be analyzed</param>
         /// <returns>Task with string containing path to the .sln file</returns>
-        public async Task<string> GetPathAsync(IFormFile zipFile)
+        public async Task<string> GetPathAsync(byte[] zipBytes)
         {
-            var path = await _zipExtractor.SaveAndExtractAsync(zipFile);
+            var path = await _zipExtractor.SaveAndExtractAsync(zipBytes);
             var solution = _solutionFinder.FindSolutionFile(path);
             return solution;
         }

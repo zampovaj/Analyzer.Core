@@ -11,6 +11,6 @@
         /// </summary>
         /// <param name="zipFile">The .zip file to be saved. Comes from API request.</param>
         /// <returns><see cref="Task"/> containing string with path to the extracted file.</returns>
-        Task<string> SaveAndExtractAsync(IFormFile zipFile);
+        Task<string> SaveAndExtractAsync(byte[] zipBytes);
     }
 }

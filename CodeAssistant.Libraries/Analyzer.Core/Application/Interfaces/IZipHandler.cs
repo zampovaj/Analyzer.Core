@@ -10,6 +10,6 @@
         /// </summary>
         /// <param name="zipFile">.zip file of the Solution to be analyzed</param>
         /// <returns>PAtht to the local directory with extracted solution</returns>
-        Task<string> GetPathAsync(IFormFile zipFile);
+        Task<string> GetPathAsync(byte[] zipBytes);
     }
 }

@@ -26,22 +26,21 @@ namespace Analyzer.Core.Infrastructure.Helpers
         /// </summary>
         /// <param name="zipFile">The .zip file to be saved. Comes from API request.</param>
         /// <returns><see cref="Task"/> containing string with path to the extracted file.</returns>
-        public async Task<string> SaveAndExtractAsync(IFormFile zipFile)
+        public async Task<string> SaveAndExtractAsync(byte[] zipBytes)
         {
-            // creates unique folder for teh newly extracted solution
+            // Create unique folder
             var id = Guid.NewGuid().ToString();
             var uploadPath = Path.Combine(_basePath, id);
             Directory.CreateDirectory(uploadPath);
+
+            // Save ZIP file
             var zipPath = Path.Combine(uploadPath, "solution.zip");
+            await File.WriteAllBytesAsync(zipPath, zipBytes);
 
-            using (var stream = new FileStream(zipPath, FileMode.Create))
-            {
-                await zipFile.CopyToAsync(stream);
-            }
-
+            // Extract and clean up
             ZipFile.ExtractToDirectory(zipPath, uploadPath);
+            File.Delete(zipPath);
 
-            File.Delete(zipPath); // clean up zip
             return uploadPath;
         }
     }

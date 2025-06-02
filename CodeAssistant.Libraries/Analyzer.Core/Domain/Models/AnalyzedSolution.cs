@@ -1,4 +1,4 @@
-﻿namespace CodeAssistant.Domain.Models
+﻿namespace Analyzer.Core.Domain.Models
 {
 
     /// <summary>

@@ -1,7 +1,7 @@
 ﻿using Newtonsoft.Json.Linq;
 using System.Text;
 
-namespace CodeAssistant.Domain.Models
+namespace Analyzer.Core.Domain.Models
 {
     /// <summary>
     /// Represents the solution to be analyzed.

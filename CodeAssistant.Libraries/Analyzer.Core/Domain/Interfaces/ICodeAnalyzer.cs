@@ -1,7 +1,7 @@
-﻿using CodeAssistant.Domain.Models;
+﻿using Analyzer.Core.Domain.Models;
 using Microsoft.CodeAnalysis;
 
-namespace CodeAssistant.Domain.Interfaces
+namespace Analyzer.Core.Domain.Interfaces
 {
     /// <summary>
     /// Analyzes compilation for errors.

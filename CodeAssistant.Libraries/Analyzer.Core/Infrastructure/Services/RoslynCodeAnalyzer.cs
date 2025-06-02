@@ -1,9 +1,9 @@
-﻿using CodeAssistant.Domain.Interfaces;
-using CodeAssistant.Domain.Models;
-using CodeAssistant.Infrastructure.Helpers;
+﻿using Analyzer.Core.Domain.Interfaces;
+using Analyzer.Core.Domain.Models;
+using Analyzer.Core.Infrastructure.Helpers;
 using Microsoft.CodeAnalysis;
 
-namespace CodeAssistant.Infrastructure.Services
+namespace Analyzer.Core.Infrastructure.Services
 {
     /// <summary>
     /// Provides Roslyn-based code analysis functionality.

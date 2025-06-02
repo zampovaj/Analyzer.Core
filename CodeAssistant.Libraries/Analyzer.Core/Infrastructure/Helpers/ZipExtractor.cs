@@ -1,6 +1,6 @@
 ﻿using System.IO.Compression;
 
-namespace CodeAssistant.Infrastructure.Helpers
+namespace Analyzer.Core.Infrastructure.Helpers
 {
     /// <summary>
     /// Extracts and saves .zip file to local directory.

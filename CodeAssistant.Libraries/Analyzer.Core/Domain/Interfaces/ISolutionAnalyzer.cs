@@ -1,6 +1,6 @@
-﻿using CodeAssistant.Domain.Models;
+﻿using Analyzer.Core.Domain.Models;
 
-namespace CodeAssistant.Domain.Interfaces
+namespace Analyzer.Core.Domain.Interfaces
 {
     /// <summary>
     /// Analyzed solution for errors.

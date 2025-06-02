@@ -1,8 +1,8 @@
-﻿using CodeAssistant.Application.Interfaces;
-using CodeAssistant.Infrastructure.Helpers;
+﻿using Analyzer.Core.Application.Interfaces;
+using Analyzer.Core.Infrastructure.Helpers;
 using System.IO.Compression;
 
-namespace CodeAssistant.Infrastructure.ApplicationServices
+namespace Analyzer.Core.Infrastructure.ApplicationServices
 {
     /// <summary>
     /// Extracts and saves .zip file to local directory

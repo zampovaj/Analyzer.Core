@@ -1,4 +1,4 @@
-﻿namespace CodeAssistant.Application.Interfaces
+﻿namespace Analyzer.Core.Application.Interfaces
 {
     /// <summary>
     /// Gets .zip file, saves it locally and returns the path

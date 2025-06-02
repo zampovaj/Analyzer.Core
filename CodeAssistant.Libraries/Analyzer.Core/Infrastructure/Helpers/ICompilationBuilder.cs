@@ -1,6 +1,6 @@
 ﻿using Microsoft.CodeAnalysis;
 
-namespace CodeAssistant.Infrastructure.Helpers
+namespace Analyzer.Core.Infrastructure.Helpers
 {
     /// <summary>
     /// Represents a service for building Roslyn <see cref="Compilation"/> objects.

@@ -1,7 +1,7 @@
 ﻿using Microsoft.CodeAnalysis;
 using Microsoft.CodeAnalysis.CSharp;
 
-namespace CodeAssistant.Infrastructure.Helpers
+namespace Analyzer.Core.Infrastructure.Helpers
 {
     /// <summary>
     /// Provides functionality to build a Roslyn <see cref="Compilation"/> from a given <see cref="SyntaxTree"/>.

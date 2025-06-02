@@ -1,4 +1,4 @@
-﻿namespace CodeAssistant.Infrastructure.Helpers
+﻿namespace Analyzer.Core.Infrastructure.Helpers
 {
     /// <summary>
     /// Used to extract and save locally a .zip file.

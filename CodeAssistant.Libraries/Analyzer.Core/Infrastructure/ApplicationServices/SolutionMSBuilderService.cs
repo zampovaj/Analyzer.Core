@@ -1,18 +1,18 @@
-﻿using CodeAssistant.Application.Interfaces;
-using CodeAssistant.Domain.Models;
-using CodeAssistant.Infrastructure.Helpers;
+﻿using Analyzer.Core.Application.Interfaces;
+using Analyzer.Core.Domain.Models;
+using Analyzer.Core.Infrastructure.Helpers;
 using Microsoft.CodeAnalysis;
 using Microsoft.CodeAnalysis.MSBuild;
 using Microsoft.Build.Locator;
-using CodeAssistant.Domain.Interfaces;
+using Analyzer.Core.Domain.Interfaces;
 using Microsoft.Extensions.Logging;
 
-using Solution = CodeAssistant.Domain.Models.Solution;
-using Project = CodeAssistant.Domain.Models.Project;
+using Solution = Analyzer.Core.Domain.Models.Solution;
+using Project = Analyzer.Core.Domain.Models.Project;
 using System.Text;
 using Microsoft.CodeAnalysis.CSharp;
 
-namespace CodeAssistant.Infrastructure.ApplicationServices
+namespace Analyzer.Core.Infrastructure.ApplicationServices
 {
     /// <summary>
     /// A service that compiles a solution and its projects into CSharpCompilation instances using MSBuildWorkspace.

@@ -1,11 +1,11 @@
-﻿using CodeAssistant.Application.Interfaces;
-using CodeAssistant.Domain.Interfaces;
-using CodeAssistant.Infrastructure.ApplicationServices;
-using CodeAssistant.Infrastructure.Helpers;
-using CodeAssistant.Infrastructure.Services;
+﻿using Analyzer.Core.Application.Interfaces;
+using Analyzer.Core.Domain.Interfaces;
+using Analyzer.Core.Infrastructure.ApplicationServices;
+using Analyzer.Core.Infrastructure.Helpers;
+using Analyzer.Core.Infrastructure.Services;
 using Microsoft.Extensions.DependencyInjection;
 
-namespace CodeAssistant.Infrastructure
+namespace Analyzer.Core.Infrastructure
 {
     /// <summary>
     /// Provides extension method to register infrastructure-level dependencies.
@@ -17,7 +17,7 @@ namespace CodeAssistant.Infrastructure
         /// </summary>
         /// <param name="services">The service collection.</param>
         /// <returns>The updated service collection.</returns>
-        public static IServiceCollection AddInfrastructure(this IServiceCollection services)
+        public static IServiceCollection AddAnalyzerCore(this IServiceCollection services)
         {
             services.AddScoped<ISyntaxParser, SyntaxParser>();
             services.AddScoped<ICompilationBuilder, CompilationBuilder>();

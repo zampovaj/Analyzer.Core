@@ -1,8 +1,8 @@
-﻿using CodeAssistant.Domain.Models;
+﻿using Analyzer.Core.Domain.Models;
 using Microsoft.CodeAnalysis;
-using Solution = CodeAssistant.Domain.Models.Solution;
+using Solution = Analyzer.Core.Domain.Models.Solution;
 
-namespace CodeAssistant.Application.Interfaces
+namespace Analyzer.Core.Application.Interfaces
 {
     /// <summary>
     /// Service used to turn Solution into solution of project Compilations to prepare it for further analysis

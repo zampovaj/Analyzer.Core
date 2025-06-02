@@ -1,4 +1,4 @@
-﻿namespace CodeAssistant.Infrastructure.Helpers
+﻿namespace Analyzer.Core.Infrastructure.Helpers
 {
     /// <summary>
     /// Trims the static path to file and makes it dynamic.

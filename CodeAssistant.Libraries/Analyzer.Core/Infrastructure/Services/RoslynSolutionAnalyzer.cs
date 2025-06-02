@@ -1,10 +1,10 @@
-﻿using CodeAssistant.Domain.Interfaces;
-using CodeAssistant.Domain.Models;
+﻿using Analyzer.Core.Domain.Interfaces;
+using Analyzer.Core.Domain.Models;
 using Microsoft.CodeAnalysis;
 
-using Solution = CodeAssistant.Domain.Models.Solution;
-using Project = CodeAssistant.Domain.Models.Project;
-namespace CodeAssistant.Infrastructure.Services
+using Solution = Analyzer.Core.Domain.Models.Solution;
+using Project = Analyzer.Core.Domain.Models.Project;
+namespace Analyzer.Core.Infrastructure.Services
 {
     /// <summary>
     /// Accepts <see cref="Solution"/>, analyzes it for errors, maps it to domain model and returns <see cref="AnalyzedSolution"/>.

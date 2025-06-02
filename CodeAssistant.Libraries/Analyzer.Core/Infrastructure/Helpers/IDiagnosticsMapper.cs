@@ -1,7 +1,7 @@
-﻿using CodeAssistant.Domain.Models;
+﻿using Analyzer.Core.Domain.Models;
 using Microsoft.CodeAnalysis;
 
-namespace CodeAssistant.Infrastructure.Helpers
+namespace Analyzer.Core.Infrastructure.Helpers
 {
     /// <summary>
     /// Defines a contract for mapping Roslyn <see cref="Diagnostic"/> instances to domain-specific <see cref="CodeError"/> models.

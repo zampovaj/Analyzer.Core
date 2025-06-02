@@ -1,4 +1,4 @@
-﻿namespace CodeAssistant.Infrastructure.Helpers
+﻿namespace Analyzer.Core.Infrastructure.Helpers
 {
     /// <summary>
     /// Searches for and returns .sln file given directory.
